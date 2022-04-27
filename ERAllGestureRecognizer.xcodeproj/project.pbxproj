@@ -16,6 +16,8 @@
 		512AF4D528192B7B00FFF685 /* ERAllGestureRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AF4D428192B7B00FFF685 /* ERAllGestureRecognizerTests.swift */; };
 		512AF4DF28192B7B00FFF685 /* ERAllGestureRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AF4DE28192B7B00FFF685 /* ERAllGestureRecognizerUITests.swift */; };
 		512AF4E128192B7B00FFF685 /* ERAllGestureRecognizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AF4E028192B7B00FFF685 /* ERAllGestureRecognizerUITestsLaunchTests.swift */; };
+		512AF4F028192C1C00FFF685 /* ERAllGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AF4EF28192C1C00FFF685 /* ERAllGesture.swift */; };
+		512AF4F228192CF600FFF685 /* ERPreventGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AF4F128192CF600FFF685 /* ERPreventGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		512AF4DA28192B7B00FFF685 /* ERAllGestureRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERAllGestureRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		512AF4DE28192B7B00FFF685 /* ERAllGestureRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERAllGestureRecognizerUITests.swift; sourceTree = "<group>"; };
 		512AF4E028192B7B00FFF685 /* ERAllGestureRecognizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERAllGestureRecognizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		512AF4EF28192C1C00FFF685 /* ERAllGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERAllGesture.swift; sourceTree = "<group>"; };
+		512AF4F128192CF600FFF685 /* ERPreventGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERPreventGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,10 @@
 		512AF4BC28192B7A00FFF685 /* ERAllGestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				512AF4EE28192BF700FFF685 /* ERAllGesture */,
+				512AF4ED28192BD900FFF685 /* Demo */,
 				512AF4BD28192B7A00FFF685 /* AppDelegate.swift */,
 				512AF4BF28192B7A00FFF685 /* SceneDelegate.swift */,
-				512AF4C128192B7A00FFF685 /* ViewController.swift */,
-				512AF4C328192B7A00FFF685 /* Main.storyboard */,
-				512AF4C628192B7B00FFF685 /* Assets.xcassets */,
 				512AF4C828192B7B00FFF685 /* LaunchScreen.storyboard */,
 				512AF4CB28192B7B00FFF685 /* Info.plist */,
 			);
@@ -125,6 +128,25 @@
 				512AF4E028192B7B00FFF685 /* ERAllGestureRecognizerUITestsLaunchTests.swift */,
 			);
 			path = ERAllGestureRecognizerUITests;
+			sourceTree = "<group>";
+		};
+		512AF4ED28192BD900FFF685 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				512AF4C628192B7B00FFF685 /* Assets.xcassets */,
+				512AF4C328192B7A00FFF685 /* Main.storyboard */,
+				512AF4C128192B7A00FFF685 /* ViewController.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		512AF4EE28192BF700FFF685 /* ERAllGesture */ = {
+			isa = PBXGroup;
+			children = (
+				512AF4EF28192C1C00FFF685 /* ERAllGesture.swift */,
+				512AF4F128192CF600FFF685 /* ERPreventGesture.swift */,
+			);
+			path = ERAllGesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512AF4F028192C1C00FFF685 /* ERAllGesture.swift in Sources */,
 				512AF4C228192B7A00FFF685 /* ViewController.swift in Sources */,
+				512AF4F228192CF600FFF685 /* ERPreventGesture.swift in Sources */,
 				512AF4BE28192B7A00FFF685 /* AppDelegate.swift in Sources */,
 				512AF4C028192B7A00FFF685 /* SceneDelegate.swift in Sources */,
 			);
@@ -366,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -445,6 +469,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
